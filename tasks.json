@@ -9,7 +9,7 @@
 	{"name": "POI 2:00", "ert": 120},
 	{"name": "POI 5:30", "ert": 330},
 	{"name": "POI No Correct.", "ert": 180},
-	{"name": "POI Address", "ert": 140},
+	{"name": "POI Address", "ert": 700},
 	{"name": "POI Hours", "ert": 180}
 ]
 
