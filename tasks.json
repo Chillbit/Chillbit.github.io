@@ -6,7 +6,7 @@
 	{"name": "Autocomplete", "ert": 240},
 	{"name": "Autocomplete Rel.", "ert": 120},
 	{"name": "POI Eval. Invalid", "ert": 120},
-	{"name": "POI Eval. Valid", "ert": 330},
+	{"name": "POI Eval. Valid", "ert": 390},
 	{"name": "POI Eval. No Correct.", "ert": 180},
 	{"name": "POI Eval. Address", "ert": 140},
 	{"name": "POI Eval. Hours", "ert": 180}
