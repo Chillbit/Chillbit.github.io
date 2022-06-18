@@ -5,11 +5,12 @@
 	{"name": "Search Rel.", "ert": 90},
 	{"name": "Autocomplete", "ert": 240},
 	{"name": "Autocomplete Rel.", "ert": 120},
-	{"name": "POI Eval. Invalid", "ert": 120},
-	{"name": "POI Eval. Valid", "ert": 390},
-	{"name": "POI Eval. No Correct.", "ert": 180},
-	{"name": "POI Eval. Address", "ert": 140},
-	{"name": "POI Eval. Hours", "ert": 180}
+	{"name": "POI 6:30", "ert": 390},
+	{"name": "POI 2:00", "ert": 120},
+	{"name": "POI 5:30", "ert": 330},
+	{"name": "POI No Correct.", "ert": 180},
+	{"name": "POI Address", "ert": 140},
+	{"name": "POI Hours", "ert": 180}
 ]
 
 
