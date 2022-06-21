@@ -12,8 +12,8 @@
 	{"name": "POI Address", "ert": 700},
 	{"name": "POI Hours", "ert": 180},
 	{"name": "POI Cat. Acc.", "ert": 160},
-	{"name": "Query Intent, Token Tag.", "ert": 220},
-	{"name": "News Dis.", "ert": 300}
+	{"name": "Query Intent & Token Tagging", "ert": 220},
+	{"name": "News Disambiguations", "ert": 60}
 ]
 
 
