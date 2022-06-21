@@ -11,7 +11,8 @@
 	{"name": "POI No Correct.", "ert": 180},
 	{"name": "POI Address", "ert": 700},
 	{"name": "POI Hours", "ert": 180},
-	{"name": "POI Cat. Acc.", "ert": 160}
+	{"name": "POI Cat. Acc.", "ert": 160},
+	{"name": "Query Intent, Token Tag.", "ert": 220}
 ]
 
 
