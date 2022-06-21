@@ -1,7 +1,7 @@
 { 
 
 "TASKS": [
-	{"name": "Search 2.0", "ert": 180},
+	{"name": "Search 2.0", "ert": 190},
 	{"name": "Search Rel.", "ert": 90},
 	{"name": "Autocomplete", "ert": 240},
 	{"name": "Autocomplete Rel.", "ert": 120},
