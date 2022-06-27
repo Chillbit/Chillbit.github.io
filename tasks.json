@@ -16,7 +16,8 @@
 	{"name": "News Disambiguations", "ert": 60},
 	{"name": "Search SBS", "ert": 160},
 	{"name": "Chain Business", "ert": 60},
-	{"name": "POI Entry Point", "ert": 135}
+	{"name": "POI Entry Point Base", "ert": 120},
+	{"name": "POI Entry Point #", "ert": 15}
 
 ]
 
