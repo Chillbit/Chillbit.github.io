@@ -10,13 +10,14 @@
 	{"name": "POI 5:30", "ert": 330},
 	{"name": "POI No Correct.", "ert": 180},
 	{"name": "POI Address", "ert": 700},
-	{"name": "POI Hours", "ert": 180},
+	{"name": "POI Hours", "ert": 150},
 	{"name": "POI Cat. Acc.", "ert": 160},
 	{"name": "Query Intent & Token Tagging", "ert": 220},
 	{"name": "News Disambiguations", "ert": 60},
 	{"name": "Search SBS", "ert": 160},
 	{"name": "Chain Business", "ert": 60},
-	{"name": "POI Entry Points", "ert": 15}
+	{"name": "POI Entry Points", "ert": 15},
+	{"name": "1:40", "ert": 100},
 
 ]
 
