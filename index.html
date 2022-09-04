@@ -11,8 +11,10 @@
       document.addEventListener("DOMContentLoaded", ()=>{
         scale_video()
         
-        document.getElementById("vid").muted = false
-        document.getElementById("vid").volume = 0.5
+        setTimeout(500, ()=>{
+          document.getElementById("vid").muted = false
+          document.getElementById("vid").volume = 0.5
+        })
       })
       
       window.addEventListener("resize", scale_video)
