@@ -2,22 +2,21 @@
   <head>
     <title>Chillbit Dot Net</title>
     <script type="text/javascript">
+      let vid = document.getElementById("vid")
+      
       function scale_video(){
-        let vid = document.getElementById("vid")
         vid.width = window.innerWidth * 0.9
         vid.height = window.innerHeight * 0.9
       }
       
       document.addEventListener("DOMContentLoaded", ()=>{
         scale_video()
-        document.getElementById("vid").volume = 0.5
+        
+        vid.muted = false
+        vid.volume = 0.5
       })
       
       window.addEventListener("resize", scale_video)
-      
-      setTimeout(()=>{
-        document.getElementById("vid").volume = 0.5
-      }, 500)
   </script>
   <style>
     body {
