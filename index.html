@@ -2,17 +2,19 @@
   <head>
     <title>Chillbit Dot Net</title>
     <script type="text/javascript">
-      window.addEventListener("resize", scale_video)
       function scale_video(){
         let vid = document.getElementById("vid")
         vid.width = window.innerWidth
         vid.height = window.innerHeight
         console.log("Window Is Being Resized...")
       }
+      
       document.addEventListener("DOMContentLoaded", ()=>{
         scale_video()
         console.log("dom loaded")
       })
+      
+      window.addEventListener("resize", scale_video)
   </script>
   </head>
   <body>
