@@ -4,22 +4,20 @@
     <script type="text/javascript">
       function scale_video(){
         let vid = document.getElementById("vid")
-        vid.width = window.innerWidth
-        vid.height = window.innerHeight
-        console.log("Window Is Being Resized...")
+        vid.width = window.innerWidth * 0.9
+        vid.height = window.innerHeight * 0.9
       }
       
       document.addEventListener("DOMContentLoaded", ()=>{
         scale_video()
-        console.log("dom loaded")
-        document.getElementById("vid").volume = 0.5
+        //document.getElementById("vid").volume = 0.5
       })
       
       window.addEventListener("resize", scale_video)
   </script>
   </head>
   <body>
-    <video id="vid" width="500" height="500" autoplay loop>
+    <video id="vid" width="500" height="500" autoplay loop muted>
       <source src="The sound of power lines part 2 [TTCcR0KqVmk].webm" type="video/webm">
     </video>
   </body>
