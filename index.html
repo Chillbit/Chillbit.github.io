@@ -4,8 +4,8 @@
     <script type="text/javascript">
       function scale_video(){
         let vid = document.getElementById("vid")
-        vid.width = window.innerWidth
-        vid.height = window.innerHeight
+        vid.width = window.innerWidth * 0.95
+        vid.height = window.innerHeight * 0.95
       }
       
       document.addEventListener("DOMContentLoaded", ()=>{
@@ -23,6 +23,6 @@
   </style>
   </head>
   <body>
-    <iframe id="vid" width="560" height="315" src="https://www.youtube.com/embed/TTCcR0KqVmk?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe id="vid" width="560" height="315" src="https://www.youtube.com/embed/TTCcR0KqVmk?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </body>
 </html>
