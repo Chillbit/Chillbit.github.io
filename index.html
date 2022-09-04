@@ -13,14 +13,6 @@
       })
       
       window.addEventListener("resize", scale_video)
-      
-      let interacted = false
-      window.addEventListener("onmousemove", ()=>{
-        if(!interacted){
-         document.getElementById("vid").muted = false
-         document.getElementById("vid").volume = 0.5
-        }
-      })
   </script>
   <style>
     body {
@@ -31,8 +23,6 @@
   </style>
   </head>
   <body>
-    <video id="vid" width="500" height="500" autoplay loop muted controls>
-      <source src="The sound of power lines part 2 [TTCcR0KqVmk].webm" type="video/webm">
-    </video>
+    <iframe id="vid" width="560" height="315" src="https://www.youtube.com/embed/TTCcR0KqVmk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </body>
 </html>
