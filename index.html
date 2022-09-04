@@ -3,7 +3,7 @@
     <title>Chillbit Dot Net</title>
     <script type="text/javascript">
       document.addEventListener("resize", scale_video)
-      scale_video(){
+      scale_video = function(){
         let vid = document.getElementById("vid")
         vid.width = window.innerWidth
         vid.height = window.innerHeight
@@ -11,11 +11,12 @@
       }
       document.addEventListener("DOMContentLoaded", ()=>{
         scale_video()
+        console.log("dom loaded")
       })
   </script>
   </head>
   <body>
-    <video id="vid" width="500" height="500" autoplay loop onLoadStart="this.volume=0.5">
+    <video id="vid" width="500" height="500" autoplay loop>
       <source src="The sound of power lines part 2 [TTCcR0KqVmk].webm" type="video/webm">
     </video>
   </body>
