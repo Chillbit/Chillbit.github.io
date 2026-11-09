@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+
+<style>
+:root{
+    --bg:#f5f7fb;
+    --p:#fff;
+    --p2:#eef2f8;
+    --t:#172033;
+    --m:#64748b;
+    --l:#d8e0eb;
+    --a:#2563eb;
+    --a2:#dbeafe;
+}
+
+[data-theme="dark"]{
+    --bg:#0b1220;
+    --p:#121c2e;
+    --p2:#19263b;
+    --t:#e8eef9;
+    --m:#9aabc2;
+    --l:#293952;
+    --a:#60a5fa;
+    --a2:#183b66;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:system-ui,sans-serif;
+    background:var(--bg);
+    color:var(--t);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    background:var(--p);
+    border:1px solid var(--l);
+    border-radius:20px;
+    padding:40px;
+    text-align:center;
+    min-width:320px;
+    box-shadow:0 8px 24px rgba(0,0,0,0.08);
+}
+
+h1{
+    margin-top:0;
+    margin-bottom:10px;
+}
+
+p{
+    color:var(--m);
+    margin-bottom:30px;
+}
+
+.buttons{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.btn{
+    display:block;
+    text-decoration:none;
+    background:var(--a);
+    color:white;
+    padding:14px;
+    border-radius:12px;
+    font-weight:600;
+    transition:.2s;
+}
+
+.btn:hover{
+    opacity:.9;
+    transform:translateY(-2px);
+}
+
+.theme-btn{
+    margin-top:20px;
+    background:var(--p2);
+    color:var(--t);
+    border:1px solid var(--l);
+    padding:10px 16px;
+    border-radius:12px;
+    cursor:pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Navigation</h1>
+    <p>Select a page</p>
+
+    <div class="buttons">
+        <a class="btn" href="pricing.html">Pricing Guide</a>
+        <a class="btn" href="counter.html">Counter</a>
+    </div>
+
+    <button class="theme-btn" id="themeBtn">Toggle Theme</button>
+</div>
+
+<script>
+const root = document.documentElement;
+
+root.dataset.theme =
+    localStorage.getItem("theme") ||
+    (window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark"
+        : "light");
+
+document.getElementById("themeBtn").onclick = () => {
+    const next =
+        root.dataset.theme === "dark" ? "light" : "dark";
+
+    root.dataset.theme = next;
+    localStorage.setItem("theme", next);
+};
+</script>
+
+</body>
+</html>
